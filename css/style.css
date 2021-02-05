@@ -3,3 +3,91 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Header */
+
+/* Nav */
+
+nav {
+  background: #f0f0f0;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#logo {
+  background: #d6b106;
+  height: 80px;
+}
+
+#menu-left {
+  background: #06d628;
+  height: 80px;
+}
+
+#menu-right {
+  background: #06a3d6;
+  height: 80px;
+}
+
+/* Jumbotron */
+
+.ms_jumbo {
+  background: #062dd6;
+  height: 500px;
+  margin-top: 80px;
+}
+
+.ms_jumbo_text {
+  background: rgba(0, 0, 0, 0.3);
+  height: 500px;
+}
+
+.ms_jumbo_form {
+  background: rgba(0, 0, 0, 0.6);
+  height: 500px;
+}
+
+/* Main */
+
+/* Sections */
+
+.ms_bg_grey {
+  background: #d0d0d0;
+}
+
+.ms_bg_white {
+  background: #fff;
+}
+
+.ms_bg_sh_blue {
+  background: linear-gradient(180deg, rgba(0,77,212,1) 0%, rgba(1,53,145,1) 100%);
+}
+
+#companies {
+  height: 250px;
+}
+
+#deploy {
+  height: 600px;
+}
+
+#designed,
+#teams {
+  height: 550px;
+}
+
+#features {
+  height: 300px;
+}
+
+#regions {
+  height: 400px;
+}
+
+#start {
+  height: 200px;
+}
