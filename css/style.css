@@ -4,6 +4,23 @@
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 36px;
+  color: #031B4E;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #031B4E;
+}
+
+p {
+  font-size: 20px;
+  line-height: 150%;
+  color: #5b6987;
+}
+
 /* Header */
 
 /* Nav */
@@ -55,8 +72,13 @@ nav {
 
 /* Sections */
 
+
+section, footer {
+  padding: 50px 0;
+}
+
 .ms_bg_grey {
-  background: #d0d0d0;
+  background: #F3F5F9;
 }
 
 .ms_bg_white {
@@ -67,27 +89,110 @@ nav {
   background: linear-gradient(180deg, rgba(0,77,212,1) 0%, rgba(1,53,145,1) 100%);
 }
 
-#companies {
-  height: 250px;
+/* Companies */
+
+#companies h4 {
+  font-size: 14px;
+  color: #C3C4C6;
 }
 
-#deploy {
-  height: 600px;
+#companies .ms_comp_logo {
+  height: 70px;
+  background: #aaa;
+  margin: 35px 0;
 }
 
-#designed,
-#teams {
-  height: 550px;
+/* Deploy */
+
+#deploy .ms_deploy_list {
+  height: 200px;
+  background: lightgreen;
 }
 
-#features {
+#deploy .ms_deploy_block {
   height: 300px;
+  background: lightblue;
 }
+
+#deploy .row > div {
+  margin: 20px 0;
+}
+
+/* Designed */
+
+#designed .ms_designed_slider {
+  height: 300px;
+  width: 350px;
+  background: lightblue;
+  margin: 40px auto;
+}
+
+#designed .ms_designed_controller {
+  height: 15px;
+  width: 60px;
+  background: cyan;
+  margin: 20px auto;
+}
+
+/* Features */
+
+#features .ms_feature_block {
+  height: 200px;
+  background: lightblue;
+  margin: 20px 0;
+}
+
+/* Regions */
 
 #regions {
-  height: 400px;
+  color: #fff;
 }
 
-#start {
-  height: 200px;
+#regions h2 {
+  color: #fff;
+}
+
+#regions .ms_region_list {
+  height: 300px;
+  background: #fff;
+  margin: 20px 0;
+}
+
+
+/* Teams */
+
+#teams .ms_development_slider {
+  height: 300px;
+  width: 350px;
+  background: lightblue;
+  margin: 40px auto;
+}
+
+#teams .ms_development_controller {
+  height: 15px;
+  width: 60px;
+  background: cyan;
+  margin: 20px auto;
+}
+
+/* Start */
+
+#start h2 {
+  color: #fff;
+}
+
+#start .ms_start_btn {
+  color: blue;
+}
+
+/* Footer */
+
+footer {
+  background: #031c4e;
+}
+
+footer .ms_ft_block {
+  height: 500px;
+  background: lightblue;
+  margin: 20px 0;
 }
