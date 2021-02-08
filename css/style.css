@@ -218,21 +218,51 @@ section, footer {
   font-size: 15px;
 }
 
-
 /* Designed */
 
 #designed .ms_designed_slider {
-  height: 300px;
-  width: 350px;
-  background: lightblue;
   margin: 40px auto;
 }
 
-#designed .ms_designed_controller {
+#designed .ms_designed_slider img {
+  width: 350px;
+  margin: 0 20px;
+}
+
+#designed .ms_designed_slider img:after {
+  width: 350px;
+  margin: 0 20px;
+}
+
+.fa-chevron-left {
+  font-size: 20px;
+  color: #999;
+}
+
+.fa-chevron-right {
+  font-size: 20px;
+  color: #031B4E;
+}
+
+.ms_designed_controller {
+  list-style: none;
+  margin: 30px auto;
+}
+
+.ms_designed_controller .ms_des_circle {
+  display: inline-block;
+  width: 15px;
   height: 15px;
-  width: 60px;
-  background: cyan;
-  margin: 20px auto;
+  border-radius: 100%;
+  margin: 0 3px;
+}
+
+.ms_dc_full {
+  background: #579aff;
+}
+
+.ms_dc_outline {
+  border: 2px solid #579aff;
 }
 
 /* Features */
