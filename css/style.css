@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+h1 {
+  color: #fff;
+  font-size: 58px;
+  margin-bottom: 20px;
+}
+
 h2 {
   font-size: 36px;
   color: #031B4E;
@@ -19,6 +25,10 @@ p {
   font-size: 20px;
   line-height: 150%;
   color: #5b6987;
+}
+
+.ms_nopad {
+  padding: 0;
 }
 
 /* Header */
@@ -68,18 +78,66 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  padding: 60px 0;
   margin-top: 80px;
 }
 
 .ms_jumbo_text {
-  background: rgba(0, 0, 0, 0.3);
-  height: 500px;
+  padding: 50px 90px 70px 0;
+}
+
+.ms_jumbo_text p {
+  color: #fff;
 }
 
 .ms_jumbo_form {
-  background: rgba(0, 0, 0, 0.6);
-  height: 500px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.ms_jf_title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.ms_jft_first {
+  color: #031B4E;
+}
+
+.ms_jft_sec {
+  color: #006aff;
+  margin-bottom: 30px;
+}
+
+.ms_btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 8px 0;
+  border: none;
+  font-weight: bold;
+}
+
+.ms_btn_create {
+  background: #579aff;
+  color: #fff;
+
+}
+
+.ms_btn_google {
+  background: #fff;
+  color: #444;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.ms_jft_terms {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.ms_jft_terms a {
+  text-decoration: underline;
 }
 
 /* Main */
