@@ -180,7 +180,6 @@ section, footer {
   padding-right: 0;
 }
 
-
 #companies .ms_comp_logo {
   display: inline-block;
   margin: 25px 0;
@@ -194,19 +193,31 @@ section, footer {
 
 /* Deploy */
 
-#deploy .ms_deploy_list {
-  height: 200px;
-  background: lightgreen;
+.ms_deploy_mt {
+  margin-top: 40px;
 }
 
-#deploy .ms_deploy_block {
-  height: 300px;
-  background: lightblue;
+#deploy .ms_deploy_list ul {
+  border-left: 1px solid #999;
+  list-style: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #031B4E;
 }
 
-#deploy .row > div {
-  margin: 20px 0;
+#deploy .ms_deploy_list ul li:not(li:first-child) {
+  margin: 15px 0;
 }
+
+#deploy .ms_deploy_block img {
+  height: 50px;
+  width: 50px;
+}
+
+#deploy .ms_deploy_block p {
+  font-size: 15px;
+}
+
 
 /* Designed */
 
