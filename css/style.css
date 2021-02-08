@@ -168,10 +168,28 @@ section, footer {
   color: #C3C4C6;
 }
 
+#companies .ms_cl_container {
+  width: 100%;
+}
+
+#companies .ms_cl_container .ms_comp_logo:first-child {
+  padding-left: 0;
+}
+
+#companies .ms_cl_container .ms_comp_logo:last-child {
+  padding-right: 0;
+}
+
+
 #companies .ms_comp_logo {
-  height: 70px;
-  background: #aaa;
-  margin: 35px 0;
+  display: inline-block;
+  margin: 25px 0;
+  padding: 0 10px;
+  width: calc((100% - 100px) / 6);
+}
+
+#companies .ms_comp_logo img {
+  width: 100%;
 }
 
 /* Deploy */
