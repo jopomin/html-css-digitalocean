@@ -25,19 +25,29 @@ p {
 
 /* Nav */
 
-nav {
-  background: #f0f0f0;
+.ms_navbar {
+  margin-bottom: 0;
   height: 80px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
+  background: #fff;
+  border: none;
+  line-height: 80px;
 }
 
-#logo {
-  background: #d6b106;
-  height: 80px;
+.ms_navbar_brand {
+  padding: 15px 0;
+}
+
+.ms_navbar_left {
+  margin-left: 10%;
+}
+
+.ms_navbar_list > li > a {
+    line-height: 80px;
+    display: inline;
+}
+
+#logo img {
+  height: 50px;
 }
 
 #menu-left {
@@ -54,6 +64,10 @@ nav {
 
 .ms_jumbo {
   background: #062dd6;
+  background-image: url('../img/jumbo_bg.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 500px;
   margin-top: 80px;
 }
