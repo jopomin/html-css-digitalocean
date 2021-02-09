@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.row > div:first-child {
+  padding-left: 0;
+}
+
+.row > div:last-child {
+  padding-right: 0;
+}
+
 h1 {
   color: #fff;
   font-size: 58px;
@@ -282,16 +290,12 @@ section, footer {
 
 /* Features */
 
-.ms_feature_block {
+.ms_feat_block {
   margin: 20px 0;
 }
 
-.ms_feature_block:first-child {
-  padding-left: 0;
-}
-
-.ms_feature_block:last-child {
-  padding-right: 0;
+.ms_feat_link {
+  color: #579aff;
 }
 
 /* Regions */
@@ -306,14 +310,6 @@ section, footer {
 
 .ms_regions_list hr {
   margin: 0;
-}
-
-.ms_regions_list:first-child {
-  padding-left: 0;
-}
-
-.ms_regions_list:last-child {
-  padding-right: 0;
 }
 
 .ms_regions_row {
@@ -393,8 +389,9 @@ section, footer {
   color: #fff;
 }
 
-#start .ms_start_btn {
-  color: blue;
+.ms_start_btn {
+  font-weight: 600;
+  color: #579aff;
 }
 
 /* Footer */
@@ -403,8 +400,57 @@ footer {
   background: #031c4e;
 }
 
-footer .ms_ft_block {
-  height: 500px;
-  background: lightblue;
+footer p {
+  font-size: 15px;
+  margin-bottom: 2px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer ul li {
+  list-style: none;
+  font-size: 16px;
+}
+
+.ms_ft_block {
   margin: 20px 0;
+}
+
+.ms_ft_header {
+  color: #ccc;
+  padding-left
+}
+
+.ms_ft_header img {
+  width: 70px;
+  margin: 20px 0;
+}
+
+.ms_made_text {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.ms_social_logos {
+  margin: 12px 0;
+}
+
+.ms_social_logos li {
+  display: inline-block;
+}
+
+.ms_social_logos li a .fa-twitter {
+  font-size: 15px;
+  color: #ccc;
+}
+
+.ms_ft_list li {
+  margin: 12px 0;
+}
+
+.ms_ft_list li a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ms_ftl_head {
+  font-weight: 600;
+  color: #fff !important;
 }
