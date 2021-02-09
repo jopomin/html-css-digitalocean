@@ -195,7 +195,7 @@ section, footer {
   display: inline-block;
   margin: 25px 0;
   padding: 0 10px;
-  width: calc((100% - 100px) / 6);
+  width: calc((100% - 20px) / 6);
 }
 
 .ms_comp_logo img {
@@ -245,19 +245,18 @@ section, footer {
   margin: 0 20px;
 }
 
-#designed .ms_designed_slider img:after {
-  width: 350px;
-  margin: 0 20px;
-}
-
 .fa-chevron-left {
-  font-size: 20px;
   color: #999;
 }
 
 .fa-chevron-right {
-  font-size: 20px;
   color: #031B4E;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 25px;
+  vertical-align: middle;
 }
 
 .ms_designed_controller {
@@ -265,7 +264,7 @@ section, footer {
   margin: 30px auto;
 }
 
-.ms_designed_controller .ms_des_circle {
+.ms_circle {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -273,11 +272,11 @@ section, footer {
   margin: 0 3px;
 }
 
-.ms_dc_full {
+.ms_c_full {
   background: #579aff;
 }
 
-.ms_dc_outline {
+.ms_c_outline {
   border: 2px solid #579aff;
 }
 
@@ -340,24 +339,52 @@ section, footer {
   font-weight: 800;
 }
 
-
-
-
-
 /* Teams */
 
-#teams .ms_development_slider {
-  height: 300px;
-  width: 350px;
-  background: lightblue;
+.ms_dev_slider {
   margin: 40px auto;
 }
 
-#teams .ms_development_controller {
-  height: 15px;
-  width: 60px;
-  background: cyan;
-  margin: 20px auto;
+.ms_dev_slider img {
+  width: 350px;
+  margin: 0 20px;
+}
+
+.ms_dev_controller {
+  list-style: none;
+  margin: 30px auto;
+}
+
+.ms_dsl_box {
+  display: inline-block;
+  background: #fff;
+  padding: 50px 25px;
+  border-radius: 15px;
+  width: 600px;
+  margin: 0 20px;
+  vertical-align: middle;
+}
+
+.ms_dsl_box img {
+  width: 250px;
+}
+
+.ms_dsb_quote {
+  margin: 30px 0;
+}
+
+.ms_dsl_box h5,
+.ms_dsb_jobpos {
+  font-size: 15px;
+  color: #031B4E;
+}
+
+.ms_dsl_box h5 {
+  font-weight: 600;
+}
+
+.ms_dsb_jobpos {
+  margin: 0;
 }
 
 /* Start */
