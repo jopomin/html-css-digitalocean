@@ -3,6 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/style.css">
@@ -11,16 +13,16 @@
   <body>
     <header>
       <nav class="navbar navbar-default ms_navbar navbar-fixed-top">
-        <div class="container">
+        <div class="container ms_container">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <div class="navbar-header ms_nav_header">
+            <button type="button" class="navbar-toggle collapsed ms_nav_toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a id="logo" class="navbar-brand ms_navbar_brand" href="#">
+            <a id="logo" class="navbar-brand ms_nav_brand" href="#">
               <img src="img/logo.png" alt="DigitalOcean Logo">
             </a>
           </div>
@@ -33,7 +35,7 @@
               <li><a href="#">Community</a></li>
               <li><a href="#">Pricing</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right ms_navbar_list">
+            <ul class="nav navbar-nav navbar-right ms_navbar_right ms_navbar_list">
               <li><a href="#">Docs</a></li>
               <li><a href="#">Support</a></li>
               <li><a href="#">Login</a></li>
@@ -43,25 +45,27 @@
         </div><!-- /.container-fluid -->
       </nav>
       <div class="ms_jumbo">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-7 ms_jumbo_text">
-              <h1>The simplest cloud platform for developers & teams</h1>
-              <p>Deploy, manage and scale cloud application faster and more efficiently on DigitalOcean</p>
+        <div class="container ms_container">
+          <div class="row ms_row">
+            <div class="col-xs-12 col-sm-7">
+              <div class="ms_jumbo_text">
+                <h1>The simplest cloud platform for developers & teams</h1>
+                <p>Deploy, manage and scale cloud application faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-5 ms_nopad">
+            <div class="col-xs-12 col-sm-5">
               <div class="ms_jumbo_form text-center">
                 <h2 class="ms_jf_title ms_jft_first">Deploy your app in seconds.</h2>
                 <h2 class="ms_jf_title ms_jft_sec">Get started now.</h2>
                 <form>
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" class="form-control ms_form_control" placeholder="Email">
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control ms_form_control" placeholder="Password">
                   </div>
-                  <button type="submit" class="btn btn-default ms_btn ms_btn_create">Create your account</button>
-                  <button type="submit" class="btn btn-default ms_btn ms_btn_google">Sign up with Google</button>
+                  <a href="#" class="btn btn-default ms_btn ms_btn_create">Create your account</button>
+                  <a href="#" class="btn btn-default ms_btn ms_btn_google">Sign up with Google</a>
                 </form>
                 <p class="ms_jft_terms">By signing up you agree to the <a href="#">Terms of Service.</a></p>
               </div>
@@ -72,36 +76,42 @@
     </header>
     <main>
       <section id="companies" class="ms_bg_grey">
-        <div class="container">
+        <div class="container ms_container">
             <h4 class="text-uppercase text-center">INNOVATIVE BUSINESSES TRUST DIGITALOCEAN</h4>
-            <div class="ms_cl_container">
-              <div class="ms_comp_logo">
-                <img src="img/docker.svg" alt="Docker Logo">
+            <div class="ms_company_logos_container">
+              <div class="ms_cl_container">
+                <div class="ms_comp_logo">
+                  <img src="img/docker.svg" alt="Docker Logo">
+                </div>
+                <div class="ms_comp_logo">
+                  <img src="img/gitlab.svg" alt="Gitlab Logo">
+                </div>
               </div>
-              <div class="ms_comp_logo">
-                <img src="img/gitlab.svg" alt="Gitlab Logo">
+              <div class="ms_cl_container">
+                <div class="ms_comp_logo">
+                  <img src="img/slack.svg" alt="Slack Logo">
+                </div>
+                <div class="ms_comp_logo">
+                  <img src="img/hashicorp.svg" alt="Hashicorp Logo">
+                </div>
               </div>
-              <div class="ms_comp_logo">
-                <img src="img/slack.svg" alt="Slack Logo">
-              </div>
-              <div class="ms_comp_logo">
-                <img src="img/hashicorp.svg" alt="Hashicorp Logo">
-              </div>
-              <div class="ms_comp_logo">
-                <img src="img/wework.svg" alt="Wework Logo">
-              </div>
-              <div class="ms_comp_logo">
-                <img src="img/splunk.svg" alt="Splunk Logo">
+              <div class="ms_cl_container">
+                <div class="ms_comp_logo">
+                  <img src="img/wework.svg" alt="Wework Logo">
+                </div>
+                <div class="ms_comp_logo">
+                  <img src="img/splunk.svg" alt="Splunk Logo">
+                </div>
               </div>
             </div>
-            <a href="#" class="ms_cust_stories text-center"><p>View customer stories ></p></a>
+            <a href="#" class="text-center"><p>View customer stories ></p></a>
         </div>
       </section>
       <section id="deploy" class="ms_bg_white text-center">
-        <div class="container">
+        <div class="container ms_container">
           <h2>Deploy and scale seamlessly</h2>
           <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
-          <div class="row text-left">
+          <div class="row ms_row text-left">
             <div class="col-sm-3 ms_deploy_list ms_deploy_mt">
               <ul>
                 <li>Deploy</li>
@@ -113,28 +123,28 @@
             </div>
             <div class="col-sm-9 ms_deploy_block">
               <div class="container-fluid">
-                <div class="row ms_deploy_mt">
-                  <div class="col-sm-6">
+                <div class="row ms_row">
+                  <div class="col-sm-6 ms_deploy_mt ms_smallbox">
                     <img src="img/cluster-deploy.svg" alt="Cluster">
                     <h3>Cluster Deployments</h3>
-                    <p class="ms_smallbox_p">Lorem ipsum dolor sit amet consectetur, adipiscing elit elementum fringilla ad, libero gravida lacinia ornare.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit elementum fringilla ad, libero gravida lacinia ornare.</p>
                   </div>
-                  <div class="col-sm-6">
+                  <div class="col-sm-6 ms_deploy_mt ms_smallbox">
                     <img src="img/optimized-compute.svg" alt="Optimize">
                     <h3>Optimized compute types</h3>
-                    <p class="ms_smallbox_p">Lorem ipsum dolor sit amet consectetur adipiscing, elit et cras at.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit et cras at.</p>
                   </div>
                 </div>
-                <div class="row ms_deploy_mt">
-                  <div class="col-sm-6">
+                <div class="row ms_row">
+                  <div class="col-sm-6 ms_deploy_mt ms_smallbox">
                     <img src="img/one-click.svg" alt="One-Click">
                     <h3>One-click apps</h3>
-                    <p class="ms_smallbox_p">Lorem ipsum dolor sit amet consectetur adipiscing elit sociosqu enim, fermentum eget imperdiet felis molestie aliquam metus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sociosqu enim, fermentum eget imperdiet felis molestie aliquam metus.</p>
                   </div>
-                  <div class="col-sm-6">
+                  <div class="col-sm-6 ms_deploy_mt ms_smallbox">
                     <img src="img/global.svg" alt="Global">
                     <h3>Global Availability</h3>
-                    <p class="ms_smallbox_p">Lorem ipsum dolor sit amet consectetur, adipiscing elit cras.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit cras.</p>
                   </div>
                 </div>
               </div>
@@ -143,7 +153,7 @@
         </div>
       </section>
       <section id="designed" class="ms_bg_grey text-center">
-        <div class="container">
+        <div class="container ms_container">
           <h2>Designed for Developers</h2>
           <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
           <div class="ms_designed_slider">
@@ -151,7 +161,7 @@
             <img src="img/droplet.jpg" alt="droplet">
             <i class="fas fa-chevron-right"></i>
           </div>
-          <h3>Create compute serves in 55 seconds or less</h3>
+          <h5>Create compute serves in 55 seconds or less</h5>
           <ul class="ms_designed_controller">
             <li class="ms_circle ms_c_full"></li>
             <li class="ms_circle ms_c_outline"></li>
@@ -161,37 +171,37 @@
         </div>
       </section>
       <section id="features" class="ms_bg_white text-center">
-        <div class="container">
+        <div class="container ms_container">
           <h2>The features your business needs</h2>
-          <div class="row">
-            <div class="col-sm-4 ms_feat_block text-left">
+          <div class="row ms_row">
+            <div class="col-sm-4 ms_feat_block ms_smallbox text-left">
               <img src="img/pred-pricing.svg" alt="Predictable">
               <h3>Predictable pricing</h3>
-              <p class="ms_smallbox_p">Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
+              <p>Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
               <a href="#" class="ms_feat_link">Support ></a>
             </div>
-            <div class="col-sm-4 ms_feat_block text-left">
+            <div class="col-sm-4 ms_feat_block ms_smallbox text-left">
               <img src="img/world-class.svg" alt="World-class">
               <h3>World-class service</h3>
-              <p class="ms_smallbox_p">Free around-the-clock technical support for all customers, with additional benefits for premium support subscribers. You’ll feel the love.</p>
+              <p>Free around-the-clock technical support for all customers, with additional benefits for premium support subscribers. You’ll feel the love.</p>
               <a href="#" class="ms_feat_link">Pricing ></a>
             </div>
-            <div class="col-sm-4 ms_feat_block text-left">
+            <div class="col-sm-4 ms_feat_block ms_smallbox text-left">
               <img src="img/reliable-platform.svg" alt="Reliable">
               <h3>Reliable platform</h3>
-              <p class="ms_smallbox_p">More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
+              <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
               <a href="#" class="ms_feat_link">Security ></a>
             </div>
           </div>
         </div>
       </section>
       <section id="regions" class="ms_bg_sh_blue text-center">
-        <div class="container">
+        <div class="container ms_container">
           <h2>Service your customers around the world from 12 data centers.</h2>
-          <div class="row">
+          <div class="row ms_row">
             <div class="col-md-6 ms_regions_list">
-              <div class="container-fluid">
-                <div class="row ms_regions_row">
+              <div class="container-fluid ms_nopad">
+                <div class="row ms_row ms_regions_row">
                   <div class="col-xs-2 ms_region_code text-left">
                     <p>AMS2</p>
                   </div>
@@ -203,7 +213,7 @@
                   </div>
                 </div>
                 <hr>
-                <div class="row ms_regions_row">
+                <div class="row ms_row ms_regions_row">
                   <div class="col-xs-2 ms_region_code text-left">
                     <p>AMS3</p>
                   </div>
@@ -215,7 +225,7 @@
                   </div>
                 </div>
                 <hr>
-                <div class="row ms_regions_row">
+                <div class="row ms_row ms_regions_row">
                   <div class="col-xs-2 ms_region_code text-left">
                     <p>BLR1</p>
                   </div>
@@ -227,7 +237,7 @@
                   </div>
                 </div>
                 <hr>
-                <div class="row ms_regions_row">
+                <div class="row ms_row ms_regions_row">
                   <div class="col-xs-2 ms_region_code text-left">
                     <p>FRA1</p>
                   </div>
@@ -239,7 +249,7 @@
                   </div>
                 </div>
                 <hr>
-                <div class="row ms_regions_row">
+                <div class="row ms_row ms_regions_row">
                   <div class="col-xs-2 ms_region_code text-left">
                     <p>LON1</p>
                   </div>
@@ -251,7 +261,7 @@
                   </div>
                 </div>
                 <hr>
-                <div class="row ms_regions_row">
+                <div class="row ms_row ms_regions_row">
                   <div class="col-xs-2 ms_region_code text-left">
                     <p>NYC1</p>
                   </div>
@@ -265,8 +275,8 @@
               </div>
             </div>
             <div class="col-md-6 ms_regions_list">
-              <div class="container-fluid">
-                <div class="row ms_regions_row">
+              <div class="container-fluid ms_nopad">
+                <div class="row ms_row ms_regions_row">
                   <div class="col-xs-2 ms_region_code text-left">
                     <p>AMS2</p>
                   </div>
@@ -278,7 +288,7 @@
                   </div>
                 </div>
                 <hr>
-                <div class="row ms_regions_row">
+                <div class="row ms_row ms_regions_row">
                   <div class="col-xs-2 ms_region_code text-left">
                     <p>AMS3</p>
                   </div>
@@ -290,7 +300,7 @@
                   </div>
                 </div>
                 <hr>
-                <div class="row ms_regions_row">
+                <div class="row ms_row ms_regions_row">
                   <div class="col-xs-2 ms_region_code text-left">
                     <p>BLR1</p>
                   </div>
@@ -302,7 +312,7 @@
                   </div>
                 </div>
                 <hr>
-                <div class="row ms_regions_row">
+                <div class="row ms_row ms_regions_row">
                   <div class="col-xs-2 ms_region_code text-left">
                     <p>FRA1</p>
                   </div>
@@ -314,7 +324,7 @@
                   </div>
                 </div>
                 <hr>
-                <div class="row ms_regions_row">
+                <div class="row ms_row ms_regions_row">
                   <div class="col-xs-2 ms_region_code text-left">
                     <p>LON1</p>
                   </div>
@@ -326,7 +336,7 @@
                   </div>
                 </div>
                 <hr>
-                <div class="row ms_regions_row">
+                <div class="row ms_row ms_regions_row">
                   <div class="col-xs-2 ms_region_code text-left">
                     <p>NYC1</p>
                   </div>
@@ -343,7 +353,7 @@
         </div>
       </section>
       <section id="teams" class="ms_bg_grey text-center">
-        <div class="container">
+        <div class="container ms_container">
           <h2>Development teams love DigitalOcean</h2>
           <div class="ms_dev_slider">
             <i class="fas fa-chevron-left"></i>
@@ -363,15 +373,15 @@
         </div>
       </section>
       <section id="start" class="ms_bg_sh_blue text-center">
-        <div class="container">
+        <div class="container ms_container">
           <h2>Get started now.</h2>
           <a href="#" class="btn btn-default ms_start_btn">Create your account</a>
         </div>
       </section>
     </main>
     <footer>
-      <div class="container">
-        <div class="row">
+      <div class="container ms_container">
+        <div class="row ms_row">
           <div class="col-sm-12 col-md-4 ms_ft_block ms_ft_header">
             <img src="img/logo-do-mini.svg" alt="DigitalOcean Logo-small">
             <p class="ms_copy_text">&#169; 2018 Digital Ocean, LLC. All rights reserved.</p>
@@ -420,10 +430,10 @@
               <li><a href="#" class="ms_ftl_head">Community</a></li>
               <li><a href="#">Tutorials</a></li>
               <li><a href="#">Meetups</a></li>
-              <li><a href="#">Q%A</a></li>
+              <li><a href="#">Q&A</a></li>
               <li><a href="#">Write for Donations</a></li>
               <li><a href="#">Droplets for Demos</a></li>
-              <li><a href="#">Hatch/a></li>
+              <li><a href="#">Hatch</a></li>
               <li><a href="#">Shop Swag</a></li>
               <li><a href="#">Research Program</a></li>
               <li><a href="#">Currents Research</a></li>

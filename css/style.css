@@ -1,7 +1,16 @@
-* {
+ms_container* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container .container-fluid,
+.container-fluid .container-fluid {
+  padding: 0;
 }
 
 .row > div:first-child {
@@ -12,20 +21,35 @@
   padding-right: 0;
 }
 
+h1, h2, h3,
+h4, h5 {
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
 h1 {
-  color: #fff;
   font-size: 58px;
-  margin-bottom: 20px;
+  color: #fff;
 }
 
 h2 {
   font-size: 36px;
   color: #031B4E;
-  margin-bottom: 20px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 24px;
+  color: #031B4E;
+}
+
+h4 {
+  font-size: 20px;
+  color: #C3C4C6;
+}
+
+h5 {
+  font-size: 20px;
   color: #031B4E;
 }
 
@@ -35,23 +59,33 @@ p {
   color: #5b6987;
 }
 
-.ms_smallbox_p {
-  font-size: 15px;
+ul[class^="ms_"] {
+  padding-inline-start: 0;
+}
+
+.ms_smallbox p {
+  font-size: 17px;
+}
+
+.ms_smallbox a {
+  font-size: 17px;
+}
+
+.ms_smallbox h3 {
+  margin: 20px 0 20px 0;
 }
 
 .ms_nopad {
   padding: 0;
 }
 
-.container,
-.container-fluid {
-  padding: 0;
-}
-
-.row {
+.container > .ms_nav_header {
   margin: 0;
 }
 
+.ms_row {
+  margin: 0;
+}
 
 
 /* Header */
@@ -66,17 +100,30 @@ p {
   line-height: 80px;
 }
 
-.ms_navbar_brand {
+.ms_nav_brand {
   padding: 15px 0;
 }
 
+.ms_navbar > .container .ms_nav_brand,
+.ms_navbar > .container-fluid .ms_nav_brand {
+  margin: 0;
+}
+
+.ms_nav_toggle {
+  margin: 23px 0;
+}
+
 .ms_navbar_left {
-  margin-left: 10%;
+  margin-left: 80px;
+}
+
+.ms_navbar_right {
+  margin: 0;
 }
 
 .ms_navbar_list > li > a {
-    line-height: 80px;
-    display: inline;
+  line-height: 80px;
+  display: inline;
 }
 
 #logo img {
@@ -101,12 +148,12 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 60px 0;
+  padding: 45px 0 65px;
   margin-top: 80px;
 }
 
 .ms_jumbo_text {
-  padding: 50px 90px 70px 0;
+  margin-bottom: 40px;
 }
 
 .ms_jumbo_text p {
@@ -116,7 +163,7 @@ p {
 .ms_jumbo_form {
   background: #fff;
   border-radius: 10px;
-  padding: 20px;
+  padding: 40px 30px;
 }
 
 .ms_jf_title {
@@ -126,11 +173,17 @@ p {
 
 .ms_jft_first {
   color: #031B4E;
+  margin: 0 0 12px;
 }
 
 .ms_jft_sec {
   color: #006aff;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+}
+
+.ms_form_control {
+  padding: 15px;
+  height: auto;
 }
 
 .ms_btn {
@@ -140,23 +193,23 @@ p {
   margin: 8px 0;
   border: none;
   font-weight: bold;
+  padding: 15px;
 }
 
 .ms_btn_create {
   background: #579aff;
   color: #fff;
-
 }
 
 .ms_btn_google {
   background: #fff;
   color: #444;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .ms_jft_terms {
-  font-size: 13px;
-  margin-top: 20px;
+  font-size: 14px;
+  margin-top: 30px;
 }
 
 .ms_jft_terms a {
@@ -169,7 +222,7 @@ p {
 
 
 section, footer {
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 .ms_bg_grey {
@@ -186,9 +239,14 @@ section, footer {
 
 /* Companies */
 
+#companies p {
+  font-size: 18px;
+  color: #579aff;
+  margin: 0;
+}
+
 #companies h4 {
-  font-size: 14px;
-  color: #C3C4C6;
+  margin: 0;
 }
 
 .ms_cl_container .ms_comp_logo:first-child {
@@ -199,77 +257,67 @@ section, footer {
   padding-right: 0;
 }
 
+.ms_company_logos_container {
+  margin: 35px 0;
+}
+
 .ms_comp_logo {
   display: inline-block;
-  margin: 25px 0;
   padding: 0 10px;
-  width: calc((100% - 20px) / 6);
+  width: calc((100% - 20px) / 2);
 }
 
 .ms_comp_logo img {
   width: 100%;
 }
 
-.ms_cust_stories p {
-  font-size: 15px;
-  color: #579aff;
-}
-
 /* Deploy */
 
-.ms_deploy_mt {
-  margin-top: 40px;
-}
-
-#deploy .ms_deploy_list ul {
+.ms_deploy_list ul {
   border-left: 1px solid #999;
   list-style: none;
   padding: 10px 15px;
   font-size: 18px;
   color: #031B4E;
+  margin: 0;
 }
 
-#deploy .ms_deploy_list ul li:not(li:first-child) {
+.ms_deploy_list ul li:not(li:first-child, li:last-child) {
   margin: 15px 0;
 }
 
-#deploy .ms_deploy_block img {
+.ms_deploy_block,
+.ms_deploy_mt {
+  margin: 30px 0 0 0;
+}
+
+.ms_deploy_block img {
   height: 50px;
   width: 50px;
 }
 
-#deploy .ms_deploy_block p {
+.ms_deploy_block p {
   font-size: 15px;
 }
 
 /* Designed */
 
-#designed .ms_designed_slider {
+.ms_designed_slider {
   margin: 40px auto;
 }
 
-#designed .ms_designed_slider img {
-  width: 350px;
-  margin: 0 20px;
-}
-
-.fa-chevron-left {
-  color: #999;
-}
-
-.fa-chevron-right {
-  color: #031B4E;
+.ms_designed_slider img {
+  width: 300px;
 }
 
 .fa-chevron-left,
 .fa-chevron-right {
-  font-size: 25px;
-  vertical-align: middle;
+  display: none;
 }
 
 .ms_designed_controller {
   list-style: none;
-  margin: 30px auto;
+  margin: 40px auto;
 }
 
 .ms_circle {
@@ -291,7 +339,7 @@ section, footer {
 /* Features */
 
 .ms_feat_block {
-  margin: 20px 0;
+  margin-top: 30px;
 }
 
 .ms_feat_link {
@@ -305,7 +353,7 @@ section, footer {
 }
 
 .ms_regions_list {
-  margin: 20px 0;
+  margin-top: 30px;
 }
 
 .ms_regions_list hr {
@@ -341,14 +389,9 @@ section, footer {
   margin: 40px auto;
 }
 
-.ms_dev_slider img {
-  width: 350px;
-  margin: 0 20px;
-}
-
 .ms_dev_controller {
   list-style: none;
-  margin: 30px auto;
+  margin: 40px auto;
 }
 
 .ms_dsl_box {
@@ -356,27 +399,22 @@ section, footer {
   background: #fff;
   padding: 50px 25px;
   border-radius: 15px;
-  width: 600px;
+  width: 350px;
   margin: 0 20px;
   vertical-align: middle;
 }
 
 .ms_dsl_box img {
-  width: 250px;
+  width: 200px;
 }
 
 .ms_dsb_quote {
   margin: 30px 0;
 }
 
-.ms_dsl_box h5,
 .ms_dsb_jobpos {
-  font-size: 15px;
+  font-size: 16px;
   color: #031B4E;
-}
-
-.ms_dsl_box h5 {
-  font-weight: 600;
 }
 
 .ms_dsb_jobpos {
@@ -390,8 +428,10 @@ section, footer {
 }
 
 .ms_start_btn {
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
   color: #579aff;
+  padding: 10px 14px;
 }
 
 /* Footer */
@@ -412,12 +452,11 @@ footer ul li {
 }
 
 .ms_ft_block {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .ms_ft_header {
   color: #ccc;
-  padding-left
 }
 
 .ms_ft_header img {
@@ -451,6 +490,478 @@ footer ul li {
 }
 
 .ms_ftl_head {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 18px;
   color: #fff !important;
+}
+
+
+/****** MOBILE - XS SCREEN ******/
+
+@media screen and (max-width: 767px) {
+
+  [class*="col-"] {
+    padding: 0;
+  }
+
+  .ms_container {
+    padding: 0 30px;
+  }
+
+}
+
+/****** TABLET - SM SCREEN ******/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  [class*="col-"] {
+    padding: 0;
+  }
+
+  .ms_container {
+    padding: 0 20px;
+  }
+
+}
+
+/****** DESKTOP - MD/LG SCREEN ******/
+
+@media screen and (min-width: 992px) {
+
+  .row > div:first-child {
+    padding-left: 0;
+  }
+
+  .row > div:last-child {
+    padding-right: 0;
+  }
+
+  .ms_smallbox_p {
+    font-size: 15px;
+  }
+
+  .container > .ms_nav_header {
+    margin: 0;
+  }
+
+  .ms_row {
+    margin: 0;
+  }
+
+  /* Header */
+
+  /* Nav */
+
+  /* .ms_navbar {
+    margin-bottom: 0;
+    height: 80px;
+    background: #fff;
+    border: none;
+    line-height: 80px;
+  }
+
+  .ms_nav_brand {
+    padding: 15px 0;
+  }
+
+  .ms_navbar > .container .ms_nav_brand,
+  .ms_navbar > .container-fluid .ms_nav_brand {
+    margin: 0;
+  }
+
+  .ms_nav_toggle {
+    margin: 23px 0;
+  }
+
+  .ms_navbar_left {
+    margin-left: 80px;
+  }
+
+  .ms_navbar_right {
+    margin: 0;
+  }
+
+  .ms_navbar_list > li > a {
+    line-height: 80px;
+    display: inline;
+  } */
+
+  #logo img {
+    height: 50px;
+  }
+
+  #menu-left {
+    background: #06d628;
+    height: 80px;
+  }
+
+  #menu-right {
+    background: #06a3d6;
+    height: 80px;
+  }
+
+  /* Jumbotron */
+
+  .ms_jumbo {
+    background: #062dd6;
+    background-image: url('../img/jumbo_bg.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    margin-top: 80px;
+  }
+
+  .ms_jumbo_text {
+    padding: 30px 90px 0 0;
+  }
+
+  .ms_jumbo_text p {
+    color: #fff;
+  }
+
+  .ms_jumbo_form {
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+  }
+
+  .ms_jf_title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .ms_jft_first {
+    color: #031B4E;
+    margin: 0 0 12px;
+  }
+
+  .ms_jft_sec {
+    color: #006aff;
+    margin-bottom: 30px;
+  }
+
+  .ms_btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 8px 0;
+    border: none;
+    font-weight: bold;
+  }
+
+  .ms_btn_google {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .ms_jft_terms {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+  .ms_jft_terms a {
+    text-decoration: underline;
+  }
+
+  /* Main */
+
+  /* Sections */
+
+
+  section, footer {
+    padding: 50px 0;
+  }
+
+  .ms_bg_grey {
+    background: #F3F5F9;
+  }
+
+  .ms_bg_white {
+    background: #fff;
+  }
+
+  .ms_bg_sh_blue {
+    background: linear-gradient(180deg, rgba(0,77,212,1) 0%, rgba(1,53,145,1) 100%);
+  }
+
+  /* Companies */
+
+  .ms_cl_container .ms_comp_logo:first-child {
+    padding-left: 0;
+  }
+
+  .ms_cl_container .ms_comp_logo:last-child {
+    padding-right: 0;
+  }
+
+  .ms_company_logos_container {
+    margin: 0;
+  }
+
+  .ms_cl_container {
+    display: inline-block;
+    width: calc((100% - 30px) / 3);
+  }
+
+  .ms_comp_logo {
+    display: inline-block;
+    margin: 25px 0;
+    padding: 0 10px;
+    width: calc((100% - 10px) / 2);
+  }
+
+  .ms_comp_logo img {
+    width: 100%;
+  }
+
+  .ms_cust_stories p {
+    font-size: 15px;
+    color: #579aff;
+  }
+
+  /* Deploy */
+
+  .ms_deploy_mt {
+    margin: 0 0 40px 0;
+  }
+
+  .ms_deploy_list {
+    margin: 30px 0 0 0;
+  }
+
+.ms_deploy_list ul {
+    border-left: 1px solid #999;
+    list-style: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #031B4E;
+  }
+
+.ms_deploy_list ul li:not(li:first-child) {
+    margin: 15px 0;
+  }
+
+.ms_deploy_block img {
+    height: 50px;
+    width: 50px;
+  }
+
+.ms_deploy_block p {
+    font-size: 15px;
+  }
+
+  /* Designed */
+
+.ms_designed_slider {
+    margin: 40px auto;
+  }
+
+.ms_designed_slider img {
+    width: 350px;
+    margin: 0 20px;
+  }
+
+  .fa-chevron-left {
+    color: #999;
+  }
+
+  .fa-chevron-right {
+    color: #031B4E;
+  }
+
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 25px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .ms_designed_controller {
+    list-style: none;
+    margin: 30px auto;
+  }
+
+  .ms_circle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 0 3px;
+  }
+
+  .ms_c_full {
+    background: #579aff;
+  }
+
+  .ms_c_outline {
+    border: 2px solid #579aff;
+  }
+
+  /* Features */
+
+  .ms_feat_block {
+    margin: 20px 0;
+  }
+
+  .ms_feat_link {
+    color: #579aff;
+  }
+
+  /* Regions */
+
+  #regions h2 {
+    color: #fff;
+  }
+
+  .ms_regions_list {
+    margin: 20px 0;
+  }
+
+  .ms_regions_list hr {
+    margin: 0;
+  }
+
+  .ms_regions_row {
+    padding: 12px;
+  }
+
+  .ms_regions_row p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+  }
+
+  .ms_region_code p {
+    font-weight: 800;
+  }
+
+  .ms_region_name p {
+    color: #ccc;
+  }
+
+  .ms_region_test a {
+    color: #579aff;
+    font-weight: 800;
+  }
+
+  /* Teams */
+
+  .ms_dev_slider {
+    margin: 40px auto;
+  }
+
+  .ms_dev_slider img {
+    width: 350px;
+    margin: 0 20px;
+  }
+
+  .ms_dev_controller {
+    list-style: none;
+    margin: 30px auto;
+  }
+
+  .ms_dsl_box {
+    display: inline-block;
+    background: #fff;
+    padding: 50px 25px;
+    border-radius: 15px;
+    width: 600px;
+    margin: 0 20px;
+    vertical-align: middle;
+  }
+
+  .ms_dsl_box img {
+    width: 250px;
+  }
+
+  .ms_dsb_quote {
+    margin: 30px 0;
+  }
+
+  .ms_dsl_box h5,
+  .ms_dsb_jobpos {
+    font-size: 15px;
+    color: #031B4E;
+  }
+
+  .ms_dsl_box h5 {
+    font-weight: 600;
+  }
+
+  .ms_dsb_jobpos {
+    margin: 0;
+  }
+
+  /* Start */
+
+  #start h2 {
+    color: #fff;
+  }
+
+  .ms_start_btn {
+    font-weight: 600;
+    color: #579aff;
+  }
+
+  /* Footer */
+
+  footer {
+    background: #031c4e;
+  }
+
+  footer p {
+    font-size: 15px;
+    margin-bottom: 2px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  footer ul li {
+    list-style: none;
+    font-size: 16px;
+  }
+
+  .ms_ft_block {
+    margin: 20px 0;
+  }
+
+  .ms_ft_header {
+    color: #ccc;
+    padding-left
+  }
+
+  .ms_ft_header img {
+    width: 70px;
+    margin: 20px 0;
+  }
+
+  .ms_made_text {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .ms_social_logos {
+    margin: 12px 0;
+  }
+
+  .ms_social_logos li {
+    display: inline-block;
+  }
+
+  .ms_social_logos li a .fa-twitter {
+    font-size: 15px;
+    color: #ccc;
+  }
+
+  .ms_ft_list li {
+    margin: 12px 0;
+  }
+
+  .ms_ft_list li a {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .ms_ftl_head {
+    font-weight: 600;
+    color: #fff !important;
+  }
+
 }
